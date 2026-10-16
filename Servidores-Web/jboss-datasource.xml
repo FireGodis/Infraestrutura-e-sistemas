@@ -1,0 +1,5 @@
+<!-- Modelo ilustrativo; configure URL e credenciais no ambiente seguro. -->
+<datasource jndi-name="java:/jdbc/PortfolioDS" pool-name="PortfolioDS" enabled="true">
+  <connection-url>jdbc:postgresql://localhost:5432/portfolio</connection-url>
+  <driver>postgresql</driver>
+</datasource>
