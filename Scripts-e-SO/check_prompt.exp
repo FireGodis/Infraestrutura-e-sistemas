@@ -1,0 +1,8 @@
+#!/usr/bin/expect -f
+# Demonstra Expect sem conectar a hosts ou enviar credenciais.
+set timeout 3
+spawn sh -c {echo pronto}
+expect {
+  "pronto" { puts "Comando de demonstração concluído" }
+  timeout { puts "Tempo limite excedido"; exit 1 }
+}
